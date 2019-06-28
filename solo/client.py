@@ -93,7 +93,7 @@ class SoloClient:
 
     def find_device(self, dev=None, solo_serial=None):
         if dev is None:
-            devices = list(CtapHidDevice.list_devices())
+            devices = list(CtapHidDevice.list_devices()) + list(CtapNfcDevice.list_devices())
             if solo_serial is not None:
                 devices = [
                     d for d in devices if d.descriptor["serial_number"] == solo_serial
