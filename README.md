@@ -13,6 +13,7 @@ Possible issues:
 
 - on Linux, ensure you have suitable udev rules in place: <https://github.com/solokeys/solo/blob/master/99-solo.rules>
 - on Windows, optionally install a libusb backend: <https://github.com/libusb/libusb/wiki/Windows#driver-installation>
+- to use NFC install `pyscard` library by `pip3 install pyscard`
 
 For development, we suggest you run `make init` instead, which
 
