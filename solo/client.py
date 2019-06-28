@@ -22,6 +22,7 @@ from fido2.ctap import CtapError
 from fido2.ctap1 import CTAP1
 from fido2.ctap2 import CTAP2
 from fido2.hid import CtapHidDevice, CTAPHID
+from fido2.nfc import CtapNfcDevice
 from fido2.utils import Timeout
 from intelhex import IntelHex
 
@@ -50,6 +51,8 @@ def find(solo_serial=None, retries=5, raw_device=None):
 
 def find_all():
     hid_devices = list(CtapHidDevice.list_devices())
+    nfc_devices = list(CtapNfcDevice.list_devices())
+    print(nfc_devices)
     solo_devices = [
         d
         for d in hid_devices

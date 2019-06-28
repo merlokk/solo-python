@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.11] - 2019-05-27
 ### Changed
 - adjust to and pin fido2 0.6.0 dependency (@conorpp)
+- adjust to and pin fido2 0.7.0 dependency for NFC functionality (@merlokk)
 - only warn if run as sudo
 
 ## [0.0.10] - 2019-03-18
@@ -16,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - solo client improvements
 - experimental interface to feed kernel entropy from key:
 `sudo ALLOW_ROOT= /path/to/solo key rng feedkernel`
+- work via pcsc channel (library: pyscard) @merlokk
 
 ## [0.0.9] - 2019-03-18
 ### Added
